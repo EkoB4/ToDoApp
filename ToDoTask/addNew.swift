@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct addNewTask: View {
+   // @EnviromentObject var listViewModel : ListViewModel
     @State var userText :String =  ""
     var body: some View {
         ScrollView{
@@ -18,9 +19,7 @@ struct addNewTask: View {
                 .cornerRadius(10)
                 .frame(height:50)
                 
-                Button(action:{
-                    
-                },label:{
+                Button(action:saveButtonPressed ,label:{
                     Text("save".uppercased())
                         .foregroundColor(.white)
                         .frame(height:50)
@@ -33,6 +32,9 @@ struct addNewTask: View {
         .padding(10)
         .navigationBarTitle("Add Task")
     }
+    func saveButtonPressed(){
+        
+    }
 }
 
 struct addNew_Previews: PreviewProvider {
@@ -40,5 +42,6 @@ struct addNew_Previews: PreviewProvider {
         NavigationView{
         addNewTask()
         }
+        .environmentObject(ListViewModel())
     }
 }

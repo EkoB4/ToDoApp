@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3542CC40274165A40058C1BF /* listViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3542CC3F274165A40058C1BF /* listViewModel.swift */; };
 		3549A80E273FE429001D2F0F /* ToDoTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549A80D273FE429001D2F0F /* ToDoTaskApp.swift */; };
 		3549A810273FE429001D2F0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549A80F273FE429001D2F0F /* ContentView.swift */; };
 		3549A812273FE42E001D2F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3549A811273FE42E001D2F0F /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3542CC3F274165A40058C1BF /* listViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listViewModel.swift; sourceTree = "<group>"; };
 		3549A80A273FE429001D2F0F /* ToDoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549A80D273FE429001D2F0F /* ToDoTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTaskApp.swift; sourceTree = "<group>"; };
 		3549A80F273FE429001D2F0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				3549A80D273FE429001D2F0F /* ToDoTaskApp.swift */,
 				3549A80F273FE429001D2F0F /* ContentView.swift */,
 				3549A83E273FF2A4001D2F0F /* addNew.swift */,
+				3542CC3F274165A40058C1BF /* listViewModel.swift */,
 				3549A839273FE485001D2F0F /* Views */,
 				3549A811273FE42E001D2F0F /* Assets.xcassets */,
 				3549A813273FE42E001D2F0F /* Preview Content */,
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3542CC40274165A40058C1BF /* listViewModel.swift in Sources */,
 				3549A84127400551001D2F0F /* itemModel.swift in Sources */,
 				3549A83B273FE773001D2F0F /* rowList.swift in Sources */,
 				3549A83F273FF2A4001D2F0F /* addNew.swift in Sources */,
