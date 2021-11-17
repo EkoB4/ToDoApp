@@ -13,15 +13,18 @@ struct ListView: View {
             List{
                 ForEach(listViewModel.items){ item in
                     rowList(value:item)
+                        .onTapGesture {
+                            withAnimation(.linear){
+                                listViewModel.updateItem(item: item)
+                            }
+                        }
                 }
                 .onDelete(perform:listViewModel.deleteItem)
                 .onMove(perform:listViewModel.moveItem)
             }/*Navigation Bar items*/
             //.listStyle(PlainListStyle())
             .navigationBarTitle("To Do App")
-            .navigationBarItems(
-                leading : EditButton(),
-                trailing:NavigationLink("Add",destination: addNewTask()))
+            .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination:addNewTask()))
             }
  
 }
