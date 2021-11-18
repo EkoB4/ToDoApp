@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3524B6262746CB7100294FCC /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3524B6252746CB7100294FCC /* mainScreen.swift */; };
 		3542CC40274165A40058C1BF /* listViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3542CC3F274165A40058C1BF /* listViewModel.swift */; };
 		3549A80E273FE429001D2F0F /* ToDoTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549A80D273FE429001D2F0F /* ToDoTaskApp.swift */; };
 		3549A810273FE429001D2F0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549A80F273FE429001D2F0F /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3524B6252746CB7100294FCC /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
 		3542CC3F274165A40058C1BF /* listViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listViewModel.swift; sourceTree = "<group>"; };
 		3549A80A273FE429001D2F0F /* ToDoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549A80D273FE429001D2F0F /* ToDoTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTaskApp.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		3549A839273FE485001D2F0F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3524B6252746CB7100294FCC /* mainScreen.swift */,
 				3549A84027400551001D2F0F /* itemModel.swift */,
 				3549A837273FE47E001D2F0F /* ListView.swift */,
 				3549A83A273FE773001D2F0F /* rowList.swift */,
@@ -296,6 +299,7 @@
 			files = (
 				3542CC40274165A40058C1BF /* listViewModel.swift in Sources */,
 				3549A84127400551001D2F0F /* itemModel.swift in Sources */,
+				3524B6262746CB7100294FCC /* mainScreen.swift in Sources */,
 				3549A83B273FE773001D2F0F /* rowList.swift in Sources */,
 				3549A83F273FF2A4001D2F0F /* addNew.swift in Sources */,
 				3549A810273FE429001D2F0F /* ContentView.swift in Sources */,

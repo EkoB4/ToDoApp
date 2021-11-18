@@ -31,9 +31,12 @@ class ListViewModel : ObservableObject {
     }
     func deleteItem(indexSet : IndexSet){
         items.remove(atOffsets: indexSet)
+      /*  let deleteItem = itemModel(title: deletedTitle, isFinished: false)
+        items.append(deleteItem)*/
     }
     func moveItem(from : IndexSet , to : Int ){
         items.move(fromOffsets: from, toOffset: to)
+            
     }
     func addItem(title:String){
         let addNewItem = itemModel(title: title, isFinished: true)
@@ -52,4 +55,5 @@ class ListViewModel : ObservableObject {
             items[index] = itemModel(title: item.title, isFinished: !item.isFinished)
         }
     }
+
 }

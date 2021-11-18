@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import SwiftUI
 struct itemModel : Identifiable , Codable {
     var id : String = UUID().uuidString
     let title : String

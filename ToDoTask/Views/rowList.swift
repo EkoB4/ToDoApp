@@ -11,8 +11,8 @@ struct rowList: View {
     @State var value : itemModel
     var body: some View {
         HStack{
-            Image(systemName: value.isFinished ? "checkmark.circle.fill":"circle")
-                .foregroundColor(Color(value.isFinished ? .green : .red))
+            Image(systemName: value.isFinished ? "circle":"checkmark.circle.fill")
+                .foregroundColor(Color(value.isFinished ? .red : .green))
         Text(value.title)
             Spacer()
     }
@@ -23,7 +23,6 @@ struct rowList: View {
 struct rowList_Previews: PreviewProvider {
     static var firstItem = itemModel(title:"first item" , isFinished: false)
    static var secondItem = itemModel(title: "second item", isFinished: true)
-   
     static var previews: some View {
         Group{
             rowList(value:firstItem)
