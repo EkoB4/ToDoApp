@@ -12,9 +12,9 @@ import SwiftUI
 class ListViewModel : ObservableObject {
     @Published var  items : [itemModel] = [] {
         didSet{
-      //      saveList()
+            saveList()
         }
-    }
+     }
     let itemsKey : String = "itemList"
     init(){
         getItems()
@@ -43,17 +43,14 @@ class ListViewModel : ObservableObject {
         items.append(addNewItem)
     }
     func updateItem(item: itemModel){
-        // if let index = items.firstIndex{(existingItem) -> Bool in
-          //  return existingItem.id == item.id
-         //}{
-    func saveList(){
-            if let encodedData = try? JSONEncoder().encode(items){
-                UserDefaults.standard.set(encodedData, forKey: "itemsList")
-        }
-   }
         if let index = items.firstIndex(where: { $0.id == item.id }){
-            items[index] = itemModel(title: item.title, isFinished: !item.isFinished)
+            items[index] = item.isUpdateComplated()
         }
     }
+    func saveList(){
+            if let encodedData = try? JSONEncoder().encode(items){
+                UserDefaults.standard.set(encodedData, forKey: itemsKey)
+        }
+   }
+ }
 
-}
