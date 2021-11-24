@@ -10,18 +10,11 @@ import SwiftUI
 struct mainScreen: View {
     var body: some View {
         TabView{
-           // LinearGradient(colors: [.blue, Color("MainScreen")], startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
-            /*GeometryReader{ geo in
-                frame(width: geo.size.width*0.5, height: geo.size.height*0.6)
-                    .foregroundColor(Color.gray)
-            }*/
-                mainScreen()
-                    .tabItem {
-                        Image(systemName: "note.text.badge.plus")
-                            .foregroundColor(.black)
-                            .background(Color.red)
-                }
-          }
+            tabItem {
+                Image("note.text.badge.plus")
+            }
+            Text("sa")
+        }
         }
     }
 struct mainScreen_Previews: PreviewProvider {

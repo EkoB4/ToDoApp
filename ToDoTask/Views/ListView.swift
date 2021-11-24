@@ -11,6 +11,18 @@ struct ListView: View {
     @EnvironmentObject var listViewModel : ListViewModel
     var body: some View {
         ZStack{
+          /*  TabView{
+                ContentView()
+                    .tabItem {
+                        Image(systemName:"house.fill")
+                        Text("sa")
+                    }
+                addNewTask()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("as")
+                    }
+           */
             if listViewModel.items.isEmpty{
                 Text("is empty")
             }else{
@@ -27,6 +39,8 @@ struct ListView: View {
                     .onMove(perform:listViewModel.moveItem)
                 }
             }
+            
+        }
         }
            /*Navigation Bar items*/
             //.listStyle(PlainListStyle())
