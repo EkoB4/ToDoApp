@@ -8,52 +8,42 @@
 import SwiftUI
 
 struct ListView: View {
-    @EnvironmentObject var listViewModel : ListViewModel
+    @State var listViewModel: ListViewModel
+    
+    init() {
+        listViewModel = ListViewModel()
+    }
     var body: some View {
-        ZStack{
-          /*  TabView{
-                ContentView()
-                    .tabItem {
-                        Image(systemName:"house.fill")
-                        Text("sa")
-                    }
-                addNewTask()
-                    .tabItem {
-                        Image(systemName: "house.fill")
-                        Text("as")
-                    }
-           */
-            if listViewModel.items.isEmpty{
-                Text("is empty")
-            }else{
-                List{
-                    ForEach(listViewModel.items){ item in
-                        rowList(value:item)
-                            .onTapGesture {
-                                withAnimation(.linear){
-                                    listViewModel.updateItem(item: item)
+        NavigationView {
+            ZStack{
+                if listViewModel.items.isEmpty{
+                    Text("is empty")
+                }else{
+                    List{
+                        ForEach(listViewModel.items){ item in
+                            rowList(value:item)
+                                .onTapGesture {
+                                    withAnimation(.linear){
+                                        listViewModel.updateItem(item: item)
+                                    }
                                 }
-                            }
+                        }
+                        .onDelete(perform:listViewModel.deleteItem)
+                        .onMove(perform:listViewModel.moveItem)
                     }
-                    .onDelete(perform:listViewModel.deleteItem)
-                    .onMove(perform:listViewModel.moveItem)
                 }
             }
-            
-        }
-        }
-           /*Navigation Bar items*/
-            //.listStyle(PlainListStyle())
-            .navigationBarTitle("To Do App")
+               /*Navigation Bar items*/
+                //.listStyle(PlainListStyle())
+                .navigationBarTitle("To Do App")
             .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination:addNewTask()))
+        }
   }
 }
+
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
         ListView()
-        }
-        .environmentObject(ListViewModel())
     }
 }
 
@@ -66,3 +56,4 @@ struct ListView_Previews: PreviewProvider {
         }
     }
 }*/
+

@@ -9,19 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            TabView{
-            Text("Sa")
-                .font(.title)
-            imageStyle()
-                
-                ListView()
+        TabView{
+            ListView()
                     .tabItem {
                         Image(systemName: "house.fill")
-                        Text("sa")
-                    }
-            }
-            }
+                    }.environmentObject(ListViewModel())
+            profileTab()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                }
+           addNewTask()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                }
+           }
         }
     }
 
@@ -32,12 +33,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct imageStyle : View{
-    var body: some View{
-            Image("profileIcon")
-                .clipShape(Circle())
-                .overlay{
-                    Circle().stroke(.gray ,lineWidth: 4)
-                }.shadow(radius: 4)
-    }
-}
+
