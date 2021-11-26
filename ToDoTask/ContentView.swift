@@ -12,15 +12,15 @@ struct ContentView: View {
         TabView{
             ListView()
                     .tabItem {
-                        Image(systemName: "house.fill")
+                        Image(systemName: "note.text.badge.plus")
                     }.environmentObject(ListViewModel())
-            profileTab()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                }
            addNewTask()
                 .tabItem {
-                    Image(systemName: "house.fill")
+                    Image(systemName: "gearshape.fill")
+                }
+            profileTab()
+                .tabItem {
+                    Image(systemName: "person.crop.circle.fill")
                 }
            }
         }
@@ -32,5 +32,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
 
 
