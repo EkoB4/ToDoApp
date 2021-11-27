@@ -10,15 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            ListView()
+            TodoListView()
                     .tabItem {
                         Image(systemName: "note.text.badge.plus")
                             .foregroundColor(.black)
                     }.environmentObject(ListViewModel())
-           addNewTask()
+           AddNewTaskView()
                 .tabItem {
                     Image(systemName: "gearshape.fill")
-                        .background(.red)
                 }
             profileTab()
                 .tabItem {

@@ -11,12 +11,12 @@ struct tabBars: View {
     var body: some View {
         TabView{
             Text("sa")
-            addNewTask()
+            AddNewTaskView()
                 .tabItem {
                     Image(systemName: "house.fill")
                 }
             NavigationView{
-                ListView()
+                TodoListView()
             }
         }
     }

@@ -16,16 +16,17 @@ struct profileTab : View {
                 Rectangle()
                     .frame(width: geo.size.width*1, height: geo.size.height*0.4)
                     .ignoresSafeArea()
-                    .foregroundColor(.purple)
+                    .foregroundColor(.clear)
+                    .background(Color("firstButtonColor"))
                 imageView()
-                    .frame(width : geo.size.width*1,height:  geo.size.height*0.7)
+                    .frame(width : geo.size.width*1,height:  geo.size.height*0.5)
                 Text("Ekin Can Bacik")
                     .font(.title)
                     .bold()
-                    .frame(width:geo.size.width*1, height: geo.size.height*1.1)
+                    .frame(width:geo.size.width*1, height: geo.size.height*0.85)
                 Spacer()
                gitIcon()
-                    .offset(x: 50, y: 460)
+                    .offset(x: 42, y: 290)
              }
         }
         }
@@ -41,7 +42,7 @@ struct imageView : View {
         Image("test")
             .frame(width: 200, height: 200)
             .clipShape(Circle())
-            .overlay(Circle().stroke(.white,lineWidth: 4))
+            .overlay(Circle().stroke(.white,lineWidth: 8))
     }
 }
 
@@ -53,16 +54,19 @@ struct gitIcon : View {
                 .frame(width:pos.size.width*0.8, height:pos.size.height*0.1)
                 .foregroundColor(.clear)
                 .background(LinearGradient(gradient: Gradient(colors: [.white,.black]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(20)
-                Text("Github")
-                .bold()
-                .font(.title)
-                .foregroundColor(.white)
-                .frame(width:pos.size.width*0.3, height: pos.size.height*0.1)
-            Link("EkoB4",destination: URL(string: "https://github.com/EkoB4")!)
-                .font(.title)
-                .frame(width:pos.size.width*1, height: pos.size.height*0.1)
-                .foregroundColor(.white)
-            
+              //  Image("github-logo")
+               // .frame(width:pos.size.width*0.3, height: pos.size.height*0.1)
+            Image("github-logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: pos.size.width/8, height: pos.size.height/10)
+            Link(destination: URL(string:"https://github.com/EkoB4")!) {
+                Text("GitHub")
+                    .bold()
+                    .font(.title)
+                    .frame(width: pos.size.width*0.7, height: pos.size.height*0.1)
+                    .foregroundColor(.white)
+            }
             Rectangle()
                 .frame(width:pos.size.width*0.8, height:pos.size.height*0.1)
                 .foregroundColor(.clear)

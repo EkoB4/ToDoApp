@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListView: View {
+struct TodoListView: View {
     @State var listViewModel: ListViewModel
     
     init() {
@@ -17,7 +17,7 @@ struct ListView: View {
         NavigationView {
             ZStack{
                 if listViewModel.items.isEmpty{
-                    Text("is empty")
+                    ifEmpty()
                 }else{
                     List{
                         ForEach(listViewModel.items){ item in
@@ -36,14 +36,20 @@ struct ListView: View {
                /*Navigation Bar items*/
                 //.listStyle(PlainListStyle())
                 .navigationBarTitle("To Do App")
-            .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination:addNewTask()))
+                .navigationBarItems(leading: EditButton().foregroundColor(.red),
+                                    trailing: NavigationLink(destination: AddNewTaskView(), label: {
+                    Text("Add")
+                        .bold()
+                        .foregroundColor(.red)
+                })
+            )
         }
   }
 }
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        TodoListView()
     }
 }
 

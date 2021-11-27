@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct addNewTask: View {
+struct AddNewTaskView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel : ListViewModel
     @State var userText :String =  ""
@@ -24,10 +24,11 @@ struct addNewTask: View {
                 .frame(height:50)
                 Button(action:saveButtonPressed ,label:{
                     Text("save".uppercased())
+                        .bold()
                         .foregroundColor(.white)
                         .frame(height:50)
                         .frame(maxWidth:.infinity)
-                        .background(Color.blue)
+                        .background(Color("firstButtonColor"))
                         .cornerRadius(10)
                 })
            }
@@ -64,7 +65,7 @@ struct addNewTask: View {
 struct addNew_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-        addNewTask()
+        AddNewTaskView()
         }
         .environmentObject(ListViewModel())
     }
