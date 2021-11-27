@@ -13,10 +13,12 @@ struct ContentView: View {
             ListView()
                     .tabItem {
                         Image(systemName: "note.text.badge.plus")
+                            .foregroundColor(.black)
                     }.environmentObject(ListViewModel())
            addNewTask()
                 .tabItem {
                     Image(systemName: "gearshape.fill")
+                        .background(.red)
                 }
             profileTab()
                 .tabItem {
