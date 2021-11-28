@@ -33,18 +33,18 @@ struct TodoListView: View {
                     }
                 }
             }
-               /*Navigation Bar items*/
-                //.listStyle(PlainListStyle())
-                .navigationBarTitle("To Do App")
-                .navigationBarItems(leading: EditButton().foregroundColor(.red),
-                                    trailing: NavigationLink(destination: AddNewTaskView(), label: {
-                    Text("Add")
-                        .bold()
-                        .foregroundColor(.red)
-                })
+            /*Navigation Bar items*/
+            //.listStyle(PlainListStyle())
+            .navigationBarTitle("To Do App")
+            .navigationBarItems(leading: EditButton().foregroundColor(.red),
+                                trailing: NavigationLink(destination: AddNewTaskView(), label: {
+                Text("Add")
+                    .bold()
+                    .foregroundColor(.red)
+            })
             )
         }
-  }
+    }
 }
 
 struct ListView_Previews: PreviewProvider {
@@ -54,12 +54,12 @@ struct ListView_Previews: PreviewProvider {
 }
 
 /*struct rowList : View {
-    var body: some View{
-        HStack{
-            Image(systemName:"checkmark.circle.fill")
-            Text("This is the first item")
-            Spacer()
-        }
-    }
-}*/
+ var body: some View{
+ HStack{
+ Image(systemName:"checkmark.circle.fill")
+ Text("This is the first item")
+ Spacer()
+ }
+ }
+ }*/
 

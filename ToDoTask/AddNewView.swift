@@ -11,17 +11,17 @@ struct AddNewTaskView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel : ListViewModel
     @State var userText :String =  ""
-                                      
+    
     @State var alertText : String = ""
     @State var showAlert : Bool = false
     var body: some View {
         ScrollView{
             VStack{
-            TextField("Add item ", text : $userText)
-                .padding()
-                .background(Color.gray.opacity(0.3 ))
-                .cornerRadius(10)
-                .frame(height:50)
+                TextField("Add item ", text : $userText)
+                    .padding()
+                    .background(Color.gray.opacity(0.3 ))
+                    .cornerRadius(10)
+                    .frame(height:50)
                 Button(action:saveButtonPressed ,label:{
                     Text("save".uppercased())
                         .bold()
@@ -31,7 +31,7 @@ struct AddNewTaskView: View {
                         .background(Color("firstButtonColor"))
                         .cornerRadius(10)
                 })
-           }
+            }
         }
         .padding(14)
         .navigationBarTitle("Add Task")
@@ -51,10 +51,10 @@ struct AddNewTaskView: View {
             return false
         }
         /*if userText.count < 3 {
-            alertText="the field cannot be empty"
-            showAlert.toggle()
-            return false
-        }*/
+         alertText="the field cannot be empty"
+         showAlert.toggle()
+         return false
+         }*/
         return true
     }
     func alertCome() -> Alert{
@@ -65,7 +65,7 @@ struct AddNewTaskView: View {
 struct addNew_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-        AddNewTaskView()
+            AddNewTaskView()
         }
         .environmentObject(ListViewModel())
     }

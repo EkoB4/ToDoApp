@@ -11,21 +11,21 @@ struct ContentView: View {
     var body: some View {
         TabView{
             TodoListView()
-                    .tabItem {
-                        Image(systemName: "note.text.badge.plus")
-                            .foregroundColor(.black)
-                    }.environmentObject(ListViewModel())
-           AddNewTaskView()
+                .tabItem {
+                    Image(systemName: "note.text.badge.plus")
+                        .foregroundColor(.black)
+                }.environmentObject(ListViewModel())
+            AddNewTaskView()
                 .tabItem {
                     Image(systemName: "gearshape.fill")
                 }
-            profileTab()
+            ProfileTabView()
                 .tabItem {
                     Image(systemName: "person.crop.circle.fill")
                 }
-           }
         }
     }
+}
 
 
 struct ContentView_Previews: PreviewProvider {
