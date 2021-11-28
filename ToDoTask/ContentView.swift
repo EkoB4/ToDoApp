@@ -12,16 +12,12 @@ struct ContentView: View {
         TabView{
             TodoListView()
                 .tabItem {
-                    Image(systemName: "note.text.badge.plus")
-                        .foregroundColor(.black)
-                }.environmentObject(ListViewModel())
-            AddNewTaskView()
-                .tabItem {
-                    Image(systemName: "gearshape.fill")
+                    Label("Add Note",systemImage: "note.text")
                 }
+            //.environmentObject(ListViewModel())
             ProfileTabView()
                 .tabItem {
-                    Image(systemName: "person.crop.circle.fill")
+                    Label("Creator",systemImage: "person.crop.circle.fill")
                 }
         }
     }
@@ -33,6 +29,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-
-

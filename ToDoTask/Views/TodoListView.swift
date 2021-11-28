@@ -35,12 +35,12 @@ struct TodoListView: View {
             }
             /*Navigation Bar items*/
             //.listStyle(PlainListStyle())
-            .navigationBarTitle("To Do App")
-            .navigationBarItems(leading: EditButton().foregroundColor(.red),
+            .navigationBarTitle("To Do App").foregroundColor(Color("TextColor"))
+            .navigationBarItems(leading: EditButton().foregroundColor(Color("TextColor")),
                                 trailing: NavigationLink(destination: AddNewTaskView(), label: {
                 Text("Add")
                     .bold()
-                    .foregroundColor(.red)
+                    .foregroundColor(Color("TextColor"))
             })
             )
         }
