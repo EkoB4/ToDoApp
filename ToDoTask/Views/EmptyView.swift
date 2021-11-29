@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ifEmpty: View {
+struct EmptyView: View {
     @State var animations : Bool = false
     var body: some View {
         VStack{
@@ -42,6 +42,6 @@ struct ifEmpty: View {
 }
 struct ifEmpty_Previews: PreviewProvider {
     static var previews: some View {
-        ifEmpty()
+        EmptyView()
     }
 }

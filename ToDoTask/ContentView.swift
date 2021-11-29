@@ -10,22 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
+            NavigationView{
             TodoListView()
                 .tabItem {
-                    Label("Add Note",systemImage: "note.text")
+                    Image(systemName: "house")
                 }
             //.environmentObject(ListViewModel())
             ProfileTabView()
                 .tabItem {
                     Label("Creator",systemImage: "person.crop.circle.fill")
                 }
+            }
         }
     }
 }
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(ListViewModel())
     }
 }

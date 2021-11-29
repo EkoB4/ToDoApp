@@ -21,6 +21,7 @@
 		3549A83F273FF2A4001D2F0F /* AddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549A83E273FF2A4001D2F0F /* AddNewView.swift */; };
 		3549A84127400551001D2F0F /* itemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549A84027400551001D2F0F /* itemModel.swift */; };
 		356E38BB2752F130000292C8 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E38BA2752F130000292C8 /* Images.swift */; };
+		356E38BF27541D3C000292C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356E38BE27541D3C000292C8 /* LaunchScreen.storyboard */; };
 		35C6488227528D0F00E2817F /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C6488127528D0E00E2817F /* EmptyView.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		3542CC3F274165A40058C1BF /* listViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listViewModel.swift; sourceTree = "<group>"; };
-		3547A9CB274FE5BA00020B0E /* profileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = profileTab.swift; path = ../profileTab.swift; sourceTree = "<group>"; };
+		3547A9CB274FE5BA00020B0E /* profileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileTab.swift; sourceTree = "<group>"; };
 		3549A80A273FE429001D2F0F /* ToDoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549A80D273FE429001D2F0F /* ToDoTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTaskApp.swift; sourceTree = "<group>"; };
 		3549A80F273FE429001D2F0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		3549A83E273FF2A4001D2F0F /* AddNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewView.swift; sourceTree = "<group>"; };
 		3549A84027400551001D2F0F /* itemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemModel.swift; sourceTree = "<group>"; };
 		356E38BA2752F130000292C8 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		356E38BE27541D3C000292C8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35C6488127528D0E00E2817F /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,12 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				356E38BA2752F130000292C8 /* Images.swift */,
-				35C6488127528D0E00E2817F /* EmptyView.swift */,
-				3547A9CB274FE5BA00020B0E /* profileTab.swift */,
 				3549A80D273FE429001D2F0F /* ToDoTaskApp.swift */,
 				3549A80F273FE429001D2F0F /* ContentView.swift */,
-				3549A83E273FF2A4001D2F0F /* AddNewView.swift */,
 				3542CC3F274165A40058C1BF /* listViewModel.swift */,
+				356E38BE27541D3C000292C8 /* LaunchScreen.storyboard */,
 				3549A811273FE42E001D2F0F /* Assets.xcassets */,
 				3549A839273FE485001D2F0F /* Views */,
 				3549A813273FE42E001D2F0F /* Preview Content */,
@@ -152,6 +152,9 @@
 		3549A839273FE485001D2F0F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3549A83E273FF2A4001D2F0F /* AddNewView.swift */,
+				3547A9CB274FE5BA00020B0E /* profileTab.swift */,
+				35C6488127528D0E00E2817F /* EmptyView.swift */,
 				3549A84027400551001D2F0F /* itemModel.swift */,
 				3549A837273FE47E001D2F0F /* TodoListView.swift */,
 				3549A83A273FE773001D2F0F /* rowList.swift */,
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356E38BF27541D3C000292C8 /* LaunchScreen.storyboard in Resources */,
 				3549A815273FE42E001D2F0F /* Preview Assets.xcassets in Resources */,
 				3549A812273FE42E001D2F0F /* Assets.xcassets in Resources */,
 			);
@@ -460,12 +464,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoTask/Preview Content\"";
+				DEVELOPMENT_TEAM = XPM8NB9WD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = ContentView;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,12 +495,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoTask/Preview Content\"";
+				DEVELOPMENT_TEAM = XPM8NB9WD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = ContentView;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,8 +522,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BUJK5M5T3U;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -540,8 +548,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BUJK5M5T3U;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

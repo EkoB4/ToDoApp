@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LaunchScreenIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kOv-Pu-yFX">
+                                <rect key="frame" x="132" y="321" width="171" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4Vp-lL-2eK"/>
+                                    <constraint firstAttribute="width" constant="150" id="ZHW-Ub-1Pl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just Note it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmG-sW-Nxh">
+                                <rect key="frame" x="131" y="539" width="152" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" name="buttonColor"/>
+                        <constraints>
+                            <constraint firstItem="kOv-Pu-yFX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Fef-rz-GJ7"/>
+                            <constraint firstItem="kOv-Pu-yFX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="a46-D5-iLj"/>
+                            <constraint firstItem="rmG-sW-Nxh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iJK-uu-yQa"/>
+                            <constraint firstItem="rmG-sW-Nxh" firstAttribute="top" secondItem="kOv-Pu-yFX" secondAttribute="bottom" constant="16" id="puT-ji-C7w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreenIcon" width="512" height="512"/>
+        <namedColor name="buttonColor">
+            <color red="0.69800001382827759" green="0.84899997711181641" blue="0.85900002717971802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

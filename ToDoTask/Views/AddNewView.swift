@@ -11,7 +11,6 @@ struct AddNewTaskView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel : ListViewModel
     @State var userText :String =  ""
-    
     @State var alertText : String = ""
     @State var showAlert : Bool = false
     var body: some View {
@@ -40,7 +39,7 @@ struct AddNewTaskView: View {
     
     func saveButtonPressed(){
         if textApporitate(){
-            listViewModel.addItem(title:userText)
+            listViewModel.addItem(title: userText)
             presentationMode.wrappedValue.dismiss()
         }
     }
